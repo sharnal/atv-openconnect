@@ -44,14 +44,8 @@ after_success:
  - cp external/x86_64/openconnect/android/x86_64-linux-android/out/sbin/openconnect out/x86_64/
 
 deploy:
-  provider: gcs
-  access_key_id: GOOGCQGVURTSQZ7ZO637
-  secret_access_key:
-    secure: Hy80IYriHUvwUii4OULL3/RoDs6QXLhKkffIj3cK7oAfZ4M6Lqu60/Xm411T/fLIlgChSuJwWn2o2o7G3rtW7bxSictz1HoC+jrcUM6EB6h78LJUxnUcBwSxqIGmkGM3EguxhBPOlDxcYiAMavUG1s+O0X8T/JIvgPh0CmvfDag=
-  bucket: cernekee-travis
-  local-dir: artifacts
+  provider: s3
+  access_key_id: AKIAI2OJW5FTWEA6OWUQ
+  secret_access_key: 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
+  bucket: shubhamtravis
   skip_cleanup: true
-  acl: public-read
-  on:
-    repo: cernekee/ics-openconnect
-    all_branches: true
