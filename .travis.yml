@@ -46,6 +46,6 @@ after_success:
 deploy:
   provider: s3
   access_key_id: AKIAI2OJW5FTWEA6OWUQ
-  secret_access_key: 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
+  secret_access_key: fvIhQ/u/e1Sxwwrm9co1oP2hA4vUdH9b80SHsu
   bucket: shubhamtravis
   skip_cleanup: true
